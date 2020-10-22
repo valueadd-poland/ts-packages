@@ -9,7 +9,7 @@
     "sourceMap": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "importHelpers": true,
+    "importHelpers": false,
     "types": [],
     "lib": ["dom", "es2018"],
     "rootDir": "./src"
