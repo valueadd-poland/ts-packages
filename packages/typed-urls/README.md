@@ -12,9 +12,9 @@ An utility package for creating typed url addresses
 ## Usage
 
 ```ts
-import { urlFactory } from "@valueadd/typed-urls";
+import { urlFactory } from '@valueadd/typed-urls';
 
 const url = urlFactory<'id'>('http://api-domain/users/:id', true);
 
-console.log(url.url({id: '1234'}));
+console.log(url.url({ id: '1234' }));
 ```
