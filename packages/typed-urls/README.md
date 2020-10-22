@@ -11,7 +11,7 @@ An utility package for creating typed url addresses
 
 ## Usage
 
-```
+```ts
 import { urlFactory } from "@valueadd/typed-urls";
 
 const url = urlFactory<'id'>('http://api-domain/users/:id', true);
