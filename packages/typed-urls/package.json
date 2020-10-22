@@ -1,6 +1,6 @@
 {
   "name": "@valueadd/typed-urls",
-  "version": "3.0.0-alpha.2",
+  "version": "3.0.0",
   "description": "Lib to URLs interpolation.",
   "author": "\"ValueAdd sp. z o.o\" <\"contact@valueadd.pl\">",
   "homepage": "https://github.com/valueadd-poland/ts-packages/tree/master/packages/typed-urls",
