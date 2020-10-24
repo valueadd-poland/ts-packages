@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "audit": "lerna-audit",
+    "build": "lerna run build",
     "lerna": "lerna",
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",

@@ -1,0 +1,38 @@
+{
+  "name": "@valueadd/ts-packages-common",
+  "version": "0.0.1-0",
+  "description": "common scripts for valueadd-poland/ts-packages repository",
+  "author": {
+    "email": "contact@valueadd.pl",
+    "name": "ValueAdd sp. z o.o.",
+    "url": "https://valueadd.pl/"
+  },
+  "homepage": "https://github.com/valueadd-poland/ts-packages#readme",
+  "license": "ISC",
+  "bin": {
+    "build": "lib/build.js"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valueadd-poland/ts-packages.git"
+  },
+  "scripts": {
+    "test": "echo \"No tests\" && exit 0"
+  },
+  "bugs": {
+    "url": "https://github.com/valueadd-poland/ts-packages/issues"
+  },
+  "dependencies": {
+    "@rollup/plugin-node-resolve": "^7.1.3",
+    "rollup": "^2.8.2",
+    "uglifyjs": "^2.4.11",
+    "change-case": "^4.1.1"
+  }
+}

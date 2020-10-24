@@ -2,7 +2,11 @@
   "name": "@valueadd/typed-urls",
   "version": "3.0.0",
   "description": "Lib to URLs interpolation.",
-  "author": "\"ValueAdd sp. z o.o\" <\"contact@valueadd.pl\">",
+  "author": {
+    "email": "contact@valueadd.pl",
+    "name": "ValueAdd sp. z o.o.",
+    "url": "https://valueadd.pl/"
+  },
   "homepage": "https://github.com/valueadd-poland/ts-packages/tree/master/packages/typed-urls",
   "license": "MIT",
   "files": [
@@ -23,21 +27,13 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "npm run clean && run-s build:**",
-    "build:declarations": "tsc -p tsconfig.lib.json --emitDeclarationOnly --declaration --declarationDir dist/lib",
-    "build:esm2015": "tsc -p tsconfig.lib.json --module es2015 --target es2015 --outDir dist/esm2015",
-    "build:esm5": "tsc -p tsconfig.lib.json --module es2015 --target es5 --outDir dist/esm5",
-    "build:cjs": "tsc -p tsconfig.lib.json --module commonjs --target es2015 --outDir dist/cjs",
-    "build:umd": "rollup dist/esm5/index.js --format umd --name TypedUrls --sourceMap --file dist/umd/typed-urls.js",
-    "build:umd:min": "cd dist/umd && uglifyjs --compress --mangle --comments -o typed-urls.min.js -- typed-urls.js && gzip typed-urls.min.js -c > typed-urls.min.js.gz",
-    "clean": "rm -rf ./dist"
+    "preversion": "npm run build",
+    "build": "build typed-urls"
   },
   "bugs": {
     "url": "https://github.com/valueadd-poland/ts-packages/issues"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^7.1.3",
-    "rollup": "^2.8.2",
-    "uglifyjs": "^2.4.11"
+    "@valueadd/ts-packages-common": "0.0.1-0"
   }
 }
