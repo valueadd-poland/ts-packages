@@ -5,6 +5,9 @@
     "version": {
       "allowBranch": "master",
       "message": "chore(release): publish"
+    },
+    "bootstrap": {
+      "ignore": "@valueadd/ts-packages-common"
     }
   }
 }
