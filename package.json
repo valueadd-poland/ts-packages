@@ -4,16 +4,21 @@
   "scripts": {
     "audit": "lerna-audit",
     "build": "lerna run build",
-    "lerna": "lerna",
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
     "format:check:package": "prettier --check \"packages/${PACKAGE}/**/*\"",
+    "lerna": "lerna",
+    "lint": "lerna run lint",
     "test": "jest"
   },
   "devDependencies": {
     "@types/jest": "^25.2.1",
     "@types/node": "^14.11.8",
+    "@typescript-eslint/eslint-plugin": "^4.6.1",
+    "@typescript-eslint/parser": "^4.6.1",
     "@valueadd/dev": "^5.0.0",
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^6.0.0",
     "jest": "^25.3.0",
     "lerna": "^3.22.1",
     "npm-run-all": "^4.1.5",

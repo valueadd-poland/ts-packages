@@ -27,8 +27,9 @@
   },
   "scripts": {
     "test": "jest",
-    "preversion": "npm run build",
-    "build": "build typed-urls"
+    "build": "build typed-urls",
+    "lint": "eslint ./src/**/**",
+    "preversion": "npm run build"
   },
   "bugs": {
     "url": "https://github.com/valueadd-poland/ts-packages/issues"
