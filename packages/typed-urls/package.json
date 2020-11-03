@@ -34,6 +34,6 @@
     "url": "https://github.com/valueadd-poland/ts-packages/issues"
   },
   "devDependencies": {
-    "@valueadd/ts-packages-common": "0.0.1-0"
+    "@valueadd/ts-packages-common": "0.0.1"
   }
 }
