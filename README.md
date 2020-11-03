@@ -8,3 +8,15 @@ A collection of packages, modules and utilities for JavaScript developers.
 | Package                                         | Description                                         | Version                                                                                                                 | Changelog                                       |
 | ----------------------------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
 | [`@valueadd/typed-urls`](./packages/typed-urls) | An utility package for creating typed url addresses | [![version](https://img.shields.io/npm/v/@valueadd/typed-urls.svg)](https://www.npmjs.com/package/@valueadd/typed-urls) | [changelog](./packages/typed-urls/CHANGELOG.md) |
+
+## Development
+
+### Setup
+
+- `$ npm install`
+- `$ npm run lerna bootstrap`
+
+### Publish packages
+
+- `npm run lerna version -- --conventional-graduate`
+- `npm run lerna publish from-git`
