@@ -14,13 +14,9 @@ export function interpolate(str: string, params = {}): string {
       result.push(i === 0 ? segment : ':' + segment);
     } else {
       segmentMatch = segment.match(/(\w+)(?:[?*])?(.*)/);
-      // @ts-ignore
       key = segmentMatch[1];
-      // @ts-ignore
       result.push(paramsCopy[key]);
-      // @ts-ignore
       result.push(segmentMatch[2] || '');
-      // @ts-ignore
       delete paramsCopy[key];
     }
   });

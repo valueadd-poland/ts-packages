@@ -52,3 +52,5 @@ jobs:
         run: node ./node_modules/@valueadd/dev validate-commit origin/master
       - name: prettier check
         run: node ./node_modules/@valueadd/dev prettier-check `git diff origin/master  --cached --name-only --diff-filter=AM | tr '\r\n' ','`
+      - name: lint
+        run: npm run lint
