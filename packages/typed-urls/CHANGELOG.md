@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/valueadd-poland/ts-packages/compare/@valueadd/typed-urls@3.0.0...@valueadd/typed-urls@4.0.0) (2021-02-11)
+
+
+### Features
+
+* **typed-urls:** change a way of extracting params ([54e41e4](https://github.com/valueadd-poland/ts-packages/commit/54e41e45a0695a50ba93e4784a64ab8ce919e828))
+
+
+### BREAKING CHANGES
+
+* **typed-urls:** No need of passing parameters as generic.
+
+
+
+
+
 # [3.0.0](https://github.com/valueadd-poland/ts-packages/compare/@valueadd/typed-urls@3.0.0-alpha.2...@valueadd/typed-urls@3.0.0) (2020-10-22)
 
 **Note:** Version bump only for package @valueadd/typed-urls
