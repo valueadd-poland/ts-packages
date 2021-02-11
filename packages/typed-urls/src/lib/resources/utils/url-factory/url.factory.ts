@@ -1,14 +1,14 @@
-import { Url } from '../../models/url.model';
 import { InterpolatableUrl } from '../../models/interpolatable-url.model';
+import { Url } from '../../models/url.model';
 
-export function urlFactory(url: string, interpolatable?: false): Url;
-export function urlFactory<T extends string>(
-  url: string,
-  interpolatable: true
-): InterpolatableUrl<T>;
-export function urlFactory<T extends string>(
-  url: string,
-  interpolatable = false
-): InterpolatableUrl<T> | Url {
-  return interpolatable ? new InterpolatableUrl<T>(url) : new Url(url);
+const isInterpolatable = new RegExp('[/:]{2,}');
+/* eslint-disable-next-line */
+export type InferReturnType<T> = T extends `${infer _Start}:${infer Param}`
+  ? InterpolatableUrl<T>
+  : Url;
+
+export function urlFactory<T extends string>(url: T): InferReturnType<T> {
+  return isInterpolatable.test(url)
+    ? (new InterpolatableUrl<T>(url) as InferReturnType<T>)
+    : (new Url(url) as InferReturnType<T>);
 }
