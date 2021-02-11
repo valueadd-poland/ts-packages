@@ -11,7 +11,7 @@ An utility package for creating typed url addresses
 
 ## Usage
 
-Based on provided value `urlFactory` will indicate whether any params are expected. It will throw an error in case they are.
+Based on provided value ```urlFactory``` will indicate whether any params are expected. It will throw an error in case they are. 
 
 ```ts
 import { urlFactory } from '@valueadd/typed-urls';
