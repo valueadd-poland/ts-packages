@@ -4,7 +4,7 @@ import { Url } from '../../models/url.model';
 
 describe('UrlFactory', () => {
   it('should return InterpolatableUrl', () => {
-    const url = urlFactory<'testId'>('testUrl/:testId', true);
+    const url = urlFactory('testUrl/:testId');
 
     expect(url instanceof InterpolatableUrl).toBeTruthy();
   });
