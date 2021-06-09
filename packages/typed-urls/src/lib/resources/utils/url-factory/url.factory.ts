@@ -3,7 +3,7 @@ import { Url } from '../../models/url.model';
 
 const isInterpolatable = new RegExp('[/:]{2,}');
 /* eslint-disable-next-line */
-export type InferReturnType<T> = T extends `${infer _Start}:${infer Param}`
+export type InferReturnType<T> = T extends `${infer _Start}/:${infer Param}`
   ? InterpolatableUrl<T>
   : Url;
 
